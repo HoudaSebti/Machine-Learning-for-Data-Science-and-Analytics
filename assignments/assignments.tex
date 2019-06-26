@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+
+\newcommand{\numpy}{{\tt numpy}}    % tt font for numpy
+
+\topmargin -.5in
+\textheight 9in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\textwidth 7in
+
+\begin{document}
+	
+	% ========== Edit your name here
+	\author{}
+	\title{}
+	\maketitle
+	
+	\medskip
+	
+	% ========== Begin answering questions here
+	\begin{enumerate}
+		
+		\item
+		Question 1:
+		
+		% ========== Just examples, please delete before submitting
+		Suppose that I had 1000 records stored in alphabetical order and I wanted to use binary search to find one of them. What is an upper bound on the number of different records I could have to look at?
+		\item
+		Answer:
+		
+		Since the binary search consists of continuously dividing the input into two merely equal-length subsets, than applying the algorithm on them, the time complexity is algorithmis.
+		And:
+		\begin{equation}
+			\log(1000) = 10
+		\end{equation}
+		
+		So, the answer is 10
+		\item
+		Question 2
+		
+		Suppose that I searched for a number x in a sorted list of n items by comparing against the 5th item, then the 10th, then the 15th, etc. until I found an item bigger than x, and then I searched backwards from that point. Which expression best describes the approximate running time of this algorithm:
+		
+		
+		\item
+		Answer:
+		
+		Here, we don't devide the problem into subsets, but we simply look for all the elements which positions are multiples of 5, then compare them to x.
+		So, the time complexity is proportional to the number of elements in the list.
+		So, the complexity is n
+		
+		\item
+		Question 3:
+		Suppose that I ran merge sort, but I could magically merge two sorted lists of any length in 1 unit of time. Which expression best describes the approximate running time of this algorithm:
+		
+		\item
+		Answer:
+		n
+	\end{enumerate}
+	
+\end{document}
+\grid
+\grid
