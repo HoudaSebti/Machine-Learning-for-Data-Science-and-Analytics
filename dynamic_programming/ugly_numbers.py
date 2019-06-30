@@ -14,10 +14,10 @@ def find_ugly_number(n):
         ugly_index = min(multiples)
         if ugly_index == 2 * multiplied_by2:
             multiplied_by2 += 1
-        if ugly_index == 3 * multiplied_by2:
+        if ugly_index == 3 * multiplied_by3:
             multiplied_by3 += 1
-        if ugly_index == 5 * multiplied_by2:
-            multiplied_by3 += 5
+        if ugly_index == 5 * multiplied_by5:
+            multiplied_by5 += 5
 
         multiples = [2 * multiplied_by2, 3 * multiplied_by3, 5 * multiplied_by5]
         index += 1
