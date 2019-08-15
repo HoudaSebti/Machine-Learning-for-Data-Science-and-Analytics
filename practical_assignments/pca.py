@@ -37,6 +37,7 @@ def pca_for_data_visualization(data):
     print('principal data:', principal_data)
     final_data = pd.concat([principal_data, data[['target']]], axis = 1)
     plot_data(final_data)
+    print('variances: ', pca.explained_variance_ratio_)
     
 if __name__ == "__main__":
     data = get_data()
